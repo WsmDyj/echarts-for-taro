@@ -10,26 +10,27 @@ export default class Index extends Component {
     super(...arguments);
     this.state = {
       charts: [
-        {
-          id: "pie",
-          name: "饼图"
-        },
-        {
-          id: "bar",
-          name: "柱状图"
-        },
-
+        { id: "pie", name: "饼图", img: require("../../img/icons/pie.png") },
+        { id: "bar", name: "柱状图", img: require("../../img/icons/bar.png") },
         {
           id: "line",
-          name: "折线图"
+          name: "折线图",
+          img: require("../../img/icons/line.png")
         },
         {
           id: "funnel",
-          name: "漏斗图"
+          name: "漏斗图",
+          img: require("../../img/icons/funnel.png")
         }
       ]
     };
   }
+
+  gotoEcharts(type) {
+    console.log(type);
+    // Taro.navigateTo({ url: `/pages/${type}/${type}` });
+  }
+
   componentWillMount() {}
 
   componentDidMount() {}
@@ -45,8 +46,12 @@ export default class Index extends Component {
       <View className="panel">
         {this.state.charts.map((chart, index) => {
           return (
-            <View className="chart-with-img" key={index}>
-              <Image src={`../../img/icons/${chart.id}.png`} />
+            <View
+              className="chart-with-img"
+              onClick={this.gotoEcharts.bind(this, chart.id)}
+              key={chart.id}
+            >
+              <Image src={chart.img} />
               <Text>{chart.name}</Text>
             </View>
           );

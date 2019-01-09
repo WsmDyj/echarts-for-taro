@@ -10,7 +10,10 @@ export default class Index extends Component {
 
   refPieChart = node => (this.pieChart = node);
 
-  componentWillMount() {}
+  componentWillMount() {
+    const chartData = { value: 30, label: "女", color: "#FFC7EB" };
+    this.pieChart.refresh(chartData);
+  }
 
   componentDidMount() {}
 
