@@ -12,7 +12,8 @@ class App extends Component {
       'pages/Funnel/Funnel',
       'pages/Gauge/Gauge',
       'pages/Heatmap/Heatmap',
-      'pages/Radar/Radar'
+      'pages/Radar/Radar',
+      'pages/Tree/Tree'
     ],
     window: {
       backgroundTextStyle: "light",
