@@ -10,25 +10,16 @@ export default class Index extends Component {
     super(...arguments);
     this.state = {
       charts: [
-        { id: "pie", name: "饼图", img: require("../../img/icons/pie.png") },
-        { id: "bar", name: "柱状图", img: require("../../img/icons/bar.png") },
-        {
-          id: "line",
-          name: "折线图",
-          img: require("../../img/icons/line.png")
-        },
-        {
-          id: "funnel",
-          name: "漏斗图",
-          img: require("../../img/icons/funnel.png")
-        }
-      ]
+        { id: "Pie", name: "饼图", img: require("../../img/icons/pie.png")},
+        { id: "Bar", name: "柱状图", img: require("../../img/icons/bar.png")},
+        { id: "Line",name: "折线图", img: require("../../img/icons/line.png")},
+        {id: "Funnel",name: "漏斗图",img: require("../../img/icons/funnel.png")}]
     };
   }
 
   gotoEcharts(type) {
     console.log(type);
-    // Taro.navigateTo({ url: `/pages/${type}/${type}` });
+    Taro.navigateTo({ url: `/pages/${type}/${type}` });
   }
 
   componentWillMount() {}

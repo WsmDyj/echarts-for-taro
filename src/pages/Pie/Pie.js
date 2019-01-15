@@ -7,21 +7,12 @@ export default class Index extends Component {
   config = {
     navigationBarTitleText: "饼图示例"
   };
-
-  refPieChart = node => (this.pieChart = node);
-
-  componentWillMount() {
+  componentDidMount() {
     const chartData = { value: 30, label: "女", color: "#FFC7EB" };
     this.pieChart.refresh(chartData);
   }
 
-  componentDidMount() {}
-
-  componentWillUnmount() {}
-
-  componentDidShow() {}
-
-  componentDidHide() {}
+  refPieChart = (node) => this.pieChart = node
 
   render() {
     return (
