@@ -14,12 +14,13 @@ export default class Index extends Component {
         { id: 'Bar', name: '柱状图', img: require('../../img/icons/bar.png')},
         { id: 'Line',name: '折线图', img: require('../../img/icons/line.png')},
         { id: 'Funnel', name: '漏斗图', img: require('../../img/icons/funnel.png')},
-        {id: 'Gauge', name: '仪表盘', img: require('../../img/icons/gauge.png') }]
+        { id: 'Gauge', name: '仪表盘', img: require('../../img/icons/gauge.png') },
+        { id: 'Heatmap', name: '热力图', img: require('../../img/icons/heatmap.png') },
+        { id: 'Radar', name: '雷达图', img: require('../../img/icons/radar.png')}]
     };
   }
 
   gotoEcharts(type) {
-    console.log(type);
     Taro.navigateTo({ url: `/pages/${type}/${type}` });
   }
 

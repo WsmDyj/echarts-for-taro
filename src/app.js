@@ -10,7 +10,9 @@ class App extends Component {
       'pages/Pie/Pie',
       'pages/Bar/Bar',
       'pages/Funnel/Funnel',
-      'pages/Gauge/Gauge'
+      'pages/Gauge/Gauge',
+      'pages/Heatmap/Heatmap',
+      'pages/Radar/Radar'
     ],
     window: {
       backgroundTextStyle: "light",

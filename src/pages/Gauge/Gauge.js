@@ -9,7 +9,7 @@ export default class Gauge extends Component {
   };
   componentDidMount() {
     const chartData = [{
-      value: 20,
+      value: 70,
       name: '完成率',
   }];
     this.gaugeChart.refresh(chartData);
