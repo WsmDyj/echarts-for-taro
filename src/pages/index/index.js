@@ -10,10 +10,11 @@ export default class Index extends Component {
     super(...arguments);
     this.state = {
       charts: [
-        { id: "Pie", name: "饼图", img: require("../../img/icons/pie.png")},
-        { id: "Bar", name: "柱状图", img: require("../../img/icons/bar.png")},
-        { id: "Line",name: "折线图", img: require("../../img/icons/line.png")},
-        {id: "Funnel",name: "漏斗图",img: require("../../img/icons/funnel.png")}]
+        { id: 'Pie', name: '饼图', img: require('../../img/icons/pie.png')},
+        { id: 'Bar', name: '柱状图', img: require('../../img/icons/bar.png')},
+        { id: 'Line',name: '折线图', img: require('../../img/icons/line.png')},
+        { id: 'Funnel', name: '漏斗图', img: require('../../img/icons/funnel.png')},
+        {id: 'Gauge', name: '仪表盘', img: require('../../img/icons/gauge.png') }]
     };
   }
 

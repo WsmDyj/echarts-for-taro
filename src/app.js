@@ -6,10 +6,11 @@ import "./app.scss";
 class App extends Component {
   config = {
     pages: [
-      "pages/index/index",
-      "pages/Pie/Pie",
-      "pages/Bar/Bar",
-      "pages/Funnel/Funnel"
+      'pages/index/index',
+      'pages/Pie/Pie',
+      'pages/Bar/Bar',
+      'pages/Funnel/Funnel',
+      'pages/Gauge/Gauge'
     ],
     window: {
       backgroundTextStyle: "light",
