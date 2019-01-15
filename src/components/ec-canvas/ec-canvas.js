@@ -56,15 +56,8 @@ Component({
         if (typeof callback === 'function') {
           this.chart = callback(canvas, res.width, res.height);
         }
-        else if (this.data.ec && typeof this.data.ec.onInit === 'function') {
+        else if (this.data.ec && this.data.ec.onInit) {
           this.chart = this.data.ec.onInit(canvas, res.width, res.height);
-        }
-        else {
-          this.triggerEvent('init', {
-            canvas: canvas,
-            width: res.width,
-            height: res.height
-          });
         }
       }).exec();
     },

@@ -3,27 +3,57 @@ import * as echarts from "./ec-canvas/echarts";
 
 function setChartData(chart, data) {
   let option = {
-    series : [
-      {
-        name: '访问来源',
-        type: 'pie',
-        center: ['50%', '50%'],
-        radius: [0, '60%'],
-        data: data,
-        itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
+  legend: {
+    data: data.name
+  },
+  calculable: true,
+  series: [
+    {
+      type:'funnel',
+      left: '10%',
+      top: 60,
+      bottom: 60,
+      width: '80%',
+      min: 0,
+      max: 100,
+      minSize: '0%',
+      maxSize: '100%',
+      sort: 'descending',
+      gap: 2,
+      label: {
+        normal: {
+          show: true,
+          position: 'inside'
+        },
+        emphasis: {
+          textStyle: {
+            fontSize: 20
           }
         }
-      }
-    ]
-  };
+      },
+      labelLine: {
+        normal: {
+          length: 10,
+          lineStyle: {
+            width: 1,
+            type: 'solid'
+          }
+        }
+      },
+      itemStyle: {
+        normal: {
+          borderColor: '#fff',
+          borderWidth: 1
+        }
+      },
+      data: data
+    }
+  ]
+  }
   chart.setOption(option);
 }
 
-export default class PieChart extends Component {
+export default class BarChart extends Component {
   config = {
     usingComponents: {
       "ec-canvas": "./ec-canvas/ec-canvas"
