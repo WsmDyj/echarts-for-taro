@@ -19,7 +19,8 @@ export default class Index extends Component {
         { id: 'Radar', name: '雷达图', img: require('../../img/icons/radar.png')},
         { id: 'Tree', name: '树图', img: require('../../img/icons/tree.png')},
         { id: 'Scatter', name: '散点图', img: require('../../img/icons/scatter.png')},
-        { id: 'Sunburst', name: '旭日图', img: require('../../img/icons/sunburst.png')}]
+        { id: 'Sunburst', name: '旭日图', img: require('../../img/icons/sunburst.png')},
+        { id: 'Map', name: '地图',img: require('../../img/icons/map.png')}]
     };
   }
 
