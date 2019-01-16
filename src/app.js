@@ -13,7 +13,8 @@ class App extends Component {
       'pages/Gauge/Gauge',
       'pages/Heatmap/Heatmap',
       'pages/Radar/Radar',
-      'pages/Tree/Tree'
+      'pages/Tree/Tree',
+      'pages/Line/Line'
     ],
     window: {
       backgroundTextStyle: "light",

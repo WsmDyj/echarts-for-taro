@@ -3,8 +3,6 @@ import * as echarts from "./ec-canvas/echarts";
 
 function setChartData(chart, data) {
   let option = {
-    tooltip: {
-    },
     color: ['#3398DB'],
     xAxis : [
       {
@@ -27,14 +25,14 @@ function setChartData(chart, data) {
     option.series = data.measures.map(item => {
       return {
         ...item,
-        type:'bar',
+        type:'line',
       }
     })
   }
   chart.setOption(option);
 }
 
-export default class PieChart extends Component {
+export default class LineChart extends Component {
   config = {
     usingComponents: {
       "ec-canvas": "./ec-canvas/ec-canvas"
