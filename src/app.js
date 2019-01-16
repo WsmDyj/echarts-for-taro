@@ -18,7 +18,8 @@ class App extends Component {
       'pages/Scatter/Scatter',
       'pages/Sunburst/Sunburst',
       'pages/Map/Map',
-      'pages/Graph/Graph'
+      'pages/Graph/Graph',
+      'pages/K/K'
     ],
     window: {
       backgroundTextStyle: "light",
