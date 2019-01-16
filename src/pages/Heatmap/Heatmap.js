@@ -5,7 +5,7 @@ import HeatmapChart from '../../components/HeatmapChart'
 
 export default class Heatmap extends Component {
   config = {
-    navigationBarTitleText: "热力图图示例"
+    navigationBarTitleText: "热力图示例"
   };
   componentDidMount() {
     const chartData = {

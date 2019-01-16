@@ -7,11 +7,11 @@ function setChartData(chart, data) {
   let dataValue = data.data
   let option = {
     tooltip: {
-      position: 'top'
     },
     animation: false,
     grid: {
       height: '50%',
+      y: '20%'
     },
     xAxis: {
       type: 'category',

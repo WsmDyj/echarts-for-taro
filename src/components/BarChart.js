@@ -3,23 +3,30 @@ import * as echarts from "./ec-canvas/echarts";
 
 function setChartData(chart, data) {
   let option = {
-    series : [
+    tooltip: {
+    },
+    color: ['#3398DB'],
+    xAxis : [
       {
-        name: '访问来源',
-        type: 'pie',
-        center: ['50%', '50%'],
-        radius: [0, '60%'],
-        data: data,
-        itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
+        type : 'category',
       }
-    ]
+    ],
+    yAxis : [
+      {
+        type : 'value'
+      }
+    ],
+    series : []
   };
+  if (data && data.dimensions && data.measures) {
+    option.xAxis.data = data.dimensions.data
+    option.series = data.measures.map(item => {
+      return {
+        ...item,
+        type: 'radar',type:'bar',
+      }
+    })
+  }
   chart.setOption(option);
 }
 
