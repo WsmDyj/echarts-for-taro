@@ -13,7 +13,7 @@
 ## FAQ
 ### 可滑动的图表？
 
-添加配置dataZoom可对图表进行缩放达到滑动的效果，可以参考 [pages/bar/index.js](/blob/master/pages/bar/index.js) 的写法。
+添加配置dataZoom可对图表进行缩放达到滑动的效果，可以参考 [pages/Move/Move]() 的写法。
 
 ### 多图表结合在一起？
 
