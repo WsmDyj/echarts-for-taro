@@ -2,7 +2,55 @@ import Taro, { Component } from "@tarojs/taro";
 import * as echarts from "./ec-canvas/echarts";
 
 function setChartData(chart, data) {
+  let xAxis = data.xAxis
+  let yAxis = data.yAxis
+  let dataValue = data.data
   let option = {
+    tooltip: {
+      position: 'top'
+    },
+    animation: false,
+    grid: {
+      height: '50%',
+    },
+    xAxis: {
+      type: 'category',
+      data: xAxis,
+      splitArea: {
+        show: true
+      }
+    },
+    yAxis: {
+      type: 'category',
+      data: yAxis,
+      splitArea: {
+        show: true
+      }
+    },
+    visualMap: {
+      min: 0,
+      max: 10,
+      calculable: true,
+      orient: 'horizontal',
+      left: 'center',
+      bottom: '15%',
+      show:false
+    },
+    series: [{
+      type: 'heatmap',
+      data: dataValue,
+      label: {
+        normal: {
+          show: false
+        }
+      },
+      itemStyle: {
+        emphasis: {
+          shadowBlur: 10,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }]
   };
   chart.setOption(option);
 }

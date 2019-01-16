@@ -6,6 +6,7 @@ function setChartData(chart, data) {
     series: [{
       type: 'tree',
       initialTreeDepth: -1,
+      name: 'root',
       data: data,
       top: '5%',
       left: '20%',
