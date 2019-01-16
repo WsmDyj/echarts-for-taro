@@ -19,7 +19,10 @@ class App extends Component {
       'pages/Sunburst/Sunburst',
       'pages/Map/Map',
       'pages/Graph/Graph',
-      'pages/K/K'
+      'pages/K/K',
+      'pages/Move/Move',
+      'pages/More/More',
+      'pages/Add/Add'
     ],
     window: {
       backgroundTextStyle: "light",
