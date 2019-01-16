@@ -3,10 +3,9 @@ import { View } from "@tarojs/components";
 import LineChart from '../../components/LineChart'
 import "./index.scss";
 
-
 export default class Line extends Component {
   config = {
-    navigationBarTitleText: "柱图示例"
+    navigationBarTitleText: "折线图示例"
   };
   componentDidMount() {
     const chartData = {

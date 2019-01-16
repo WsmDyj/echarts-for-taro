@@ -6,7 +6,7 @@ import "./index.scss";
 
 export default class Bar extends Component {
   config = {
-    navigationBarTitleText: "柱图示例"
+    navigationBarTitleText: "柱状图示例"
   };
   componentDidMount() {
     const chartData = {

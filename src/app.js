@@ -14,7 +14,8 @@ class App extends Component {
       'pages/Heatmap/Heatmap',
       'pages/Radar/Radar',
       'pages/Tree/Tree',
-      'pages/Line/Line'
+      'pages/Line/Line',
+      'pages/Scatter/Scatter'
     ],
     window: {
       backgroundTextStyle: "light",
