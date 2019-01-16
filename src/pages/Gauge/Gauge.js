@@ -5,7 +5,7 @@ import GaugeChart from "../../components/GaugeChart";
 
 export default class Gauge extends Component {
   config = {
-    navigationBarTitleText: "饼图示例"
+    navigationBarTitleText: "仪表盘示例"
   };
   componentDidMount() {
     const chartData = [{
