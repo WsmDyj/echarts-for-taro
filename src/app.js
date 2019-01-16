@@ -15,7 +15,8 @@ class App extends Component {
       'pages/Radar/Radar',
       'pages/Tree/Tree',
       'pages/Line/Line',
-      'pages/Scatter/Scatter'
+      'pages/Scatter/Scatter',
+      'pages/Sunburst/Sunburst'
     ],
     window: {
       backgroundTextStyle: "light",
