@@ -8,7 +8,7 @@
 
 在微信中扫描下面的二维码即可体验 ECharts Demo：
 
-![ECharts Demo](img/weixin-app.jpg)
+![TaroECharts Demo](https://github.com/WsmDyj/echarts-for-taro/blob/master/src/img/TaroEcharts.png?raw=true)
 
 ## FAQ
 ### 可滑动的图表？
