@@ -22,7 +22,7 @@ class App extends Component {
       'pages/K/K',
       'pages/Move/Move',
       'pages/More/More',
-      'pages/Add/Add'
+      'pages/Add/Add',
     ],
     window: {
       backgroundTextStyle: "light",
