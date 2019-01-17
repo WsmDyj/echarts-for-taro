@@ -25,8 +25,8 @@ export default class Index extends Component {
         { id: 'K', name: 'K 线图', img: require('../../img/icons/k.png') }
       ],
       bottom: [
-        { id: 'Move', name: '可滑动图表'},
-        { id: 'More', name: '一个页面多图表'},
+        { id: 'Move', name: '可滑动的图表'},
+        { id: 'More', name: '一个页面多个图表'},
         { id: 'Add', name: '多图表结合在一起' }
       ]
     }
