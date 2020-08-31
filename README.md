@@ -6,7 +6,7 @@
 ![TaroECharts Demo](https://user-gold-cdn.xitu.io/2019/1/17/1685a1063cc8a9bf?w=439&h=413&f=png&s=106489)
 ## 实现过程
 ### 1 下载
-为了兼容小程序 Canvas，我们首先去构建ec-canvas下载到本地。其中ec-canvas是[Apache ECharts (incubating)](https://echarts.apache.org/)官网提供的组件，我们可以自行下载或者去[官网自定义构建](https://echarts.baidu.com/builder.html)选择自己需要的图表或插件进行下载。
+为了兼容小程序 Canvas，我们首先去构建ec-canvas下载到本地。其中ec-canvas是[Apache ECharts (incubating)](https://echarts.apache.org/)官网提供的组件，我们可以自行下载或者去[官网自定义构建](https://echarts.apache.org/builder.html)选择自己需要的图表或插件进行下载。
 ### 2 引入组件
 在项目中引入我们需要的组件库，这里统一将其放在`src/components/ec-canvas`文件夹下。大家可将[该文件夹](https://github.com/WsmDyj/echarts-for-taro/tree/master/src/components/ec-canvas)导入到自己项目中去。其中echarts.js就是刚我们自行下载的echarts图表插件，可根据实际项目需求自定义下载所需图表然后将其导入。
 ### 3 创建图表(以饼图为例)
